@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- FAVICONS -->
-    <link rel="icon" href="<?php echo(get_template_directory_uri()."/assets/icons/favicon-33.jpg") ?>" sizes="33x33">
-    <link rel="icon" href="<?php echo(get_template_directory_uri()."/assets/icons/favicon-192.jpg") ?>" sizes="192x192">
-    <link rel="apple-touch-icon" href="<?php echo(get_template_directory_uri()."/assets/icons/favicon-192.jpg") ?>">
-    <meta name="msapplication-TileImage" content="<?php echo(get_template_directory_uri()."/assets/icons/favicon-192.jpg") ?>">
+    <link rel="icon" href="<?php echo(get_template_directory_uri()."/assets/icons/favicon-33.png") ?>" sizes="33x33">
+    <link rel="icon" href="<?php echo(get_template_directory_uri()."/assets/icons/favicon-192.png") ?>" sizes="192x192">
+    <link rel="apple-touch-icon" href="<?php echo(get_template_directory_uri()."/assets/icons/favicon-192.png") ?>">
+    <meta name="msapplication-TileImage" content="<?php echo(get_template_directory_uri()."/assets/icons/favicon-192.png") ?>">
 
     <?php wp_head(); ?>
 </head>
