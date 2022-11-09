@@ -38,7 +38,7 @@ body::-webkit-scrollbar {
 
 
 .Spacer {
-  height: 100px;
+  height: 180px;
 }
 
 .topnav {
@@ -364,7 +364,9 @@ a.homeButton {
 @media screen and (max-width: 600px) {
   .aboutContainer {
     flex-direction: column;
-
+  }
+  .mobileInvert {
+    flex-direction: column-reverse;
   }
 }
 

@@ -27,7 +27,7 @@ get_header();
         </div>
     </div>
 
-    <div class="aboutContainer">
+    <div class="aboutContainer mobileInvert">
         <div class="aboutTitleCol">
             <img src="<?php the_field('second_about_image'); ?>" alt="" srcset="">
         </div>

@@ -1,8 +1,8 @@
 <div class="footerContainer">
     <div class="footer" id="footer">
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">Contacts</a>
+        <a href="https://www.facebook.com/ArtistaBranco">Facebook</a>
+        <a href="https://instagram.com/branco.arte?igshid=YmMyMTA2M2Y=">Instagram</a>
+        <a href="/contacts">Contacts</a>
         <a href="https://ugoleonecavalcanti.com">Credits</a>
     </div>
 </div>

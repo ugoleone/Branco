@@ -13,9 +13,9 @@ get_header();
         </div>
         <div class="contactsBodyCol">
            <h2>Management</h2>
-           <a href="#">indirizzo.mail@gmail.com</a>
-           <a href="#">+39 349 1234566</a>
-           <span><a href="#">Instagram</a> | <a href="#">Facebook</a></span>
+           <a href="MAILTO:stefaniacesari.br@gmail.com">stefaniacesari.br@gmail.com</a>
+           <a href="TEL:+55 11 984379847">+55 11 984379847</a>
+           <span><a href="https://instagram.com/branco.arte?igshid=YmMyMTA2M2Y=">Instagram</a> | <a href="https://www.facebook.com/ArtistaBranco">Facebook</a></span>
         </div>
     </div>
 
