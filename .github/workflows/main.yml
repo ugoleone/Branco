@@ -11,7 +11,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        server: ftp.cluster028.hosting.ovh.net/
+        server: ftp.cluster028.hosting.ovh.net
         username: brancop
         password: ${{ secrets.ftp_password }}
-        server-dir: www/wp-content/themes/sismaTheme/
+        server-dir: www/wp-content/themes/brancoTheme/
