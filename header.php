@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 
-<?php/*
-    if(isset($_GET['accept-cookies'])) {
-        //1 anno equivale a 31556925 secondi
-        setcookie('accept-cookies', 'true', time()+31556925, "/");
-        header('Location: ./');
-    }*/
-?>
 
 <html lang="it">
 <head>
