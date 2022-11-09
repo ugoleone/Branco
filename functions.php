@@ -29,6 +29,7 @@
     @ini_set( 'max_execution_time', '800' );
 
     //HTTP headers
+    /*
     function replace_wp_headers($headers) {
         $headers['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains';
         //$headers['Content-Security-Policy-Report-Only'] = "  default-src 'self' ; style-src-elem https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css https://fonts.googleapis.com/css2 ; script-src 'self'";
@@ -42,6 +43,6 @@
 
         return $headers;
     }
-    add_filter('wp_headers', replace_wp_headers);
+    add_filter('wp_headers', replace_wp_headers);*/
 
 ?>
