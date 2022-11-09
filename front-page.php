@@ -2,6 +2,9 @@
 get_header();
 ?>
 
+<script>
+    document.getElementById('home').classList.add("active");
+</script>
 
 <?php get_template_part('assets/template-parts/section', 'gallery'); ?>
 

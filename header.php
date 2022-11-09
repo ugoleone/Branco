@@ -32,10 +32,10 @@
     <div class="topnav" id="myTopnav">
         <a href="/" class="homeButton">Branco</a>
         <div class="navContainer">
-            <a href="/" class="active">Home</a>
-            <a href="/contacts"><?php echo __('Contatti','branco'); ?></a>
-            <a href="/about"><?php echo __('Biografia','branco'); ?></a>
-            <a href="/expos"><?php echo __('Mostre','branco'); ?></a>
+            <a href="/" id="home">Home</a>
+            <a href="/contacts" id="contacts"><?php echo __('Contatti','branco'); ?></a>
+            <a href="/about" id="about"><?php echo __('Biografia','branco'); ?></a>
+            <a href="/expos" id="expos"><?php echo __('Mostre','branco'); ?></a>
             <a href="javascript:void(0);" class="icon" id="openMenuB" onclick="openMenu()">
             <i class="fa fa-bars"></i>
             </a>

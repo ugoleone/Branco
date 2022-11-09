@@ -7,6 +7,10 @@ Template Name: About
 get_header();
 ?>
 
+<script>
+    document.getElementById('about').classList.add("active");
+</script>
+
 
     <div class="aboutContainer">
         <div class="aboutTitleCol">

@@ -7,6 +7,10 @@ Template Name: Expos
 get_header();
 ?>
 
+<script>
+    document.getElementById('expos').classList.add("active");
+</script>
+
     <div class="aboutContainer">
         <div class="aboutTitleCol">
             <img src="<?php the_field('first_about_image'); ?>" alt="" srcset="">

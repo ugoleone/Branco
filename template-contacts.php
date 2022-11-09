@@ -7,6 +7,10 @@ Template Name: Contacts
 get_header();
 ?>
 
+<script>
+    document.getElementById('contacts').classList.add("active");
+</script>
+
     <div class="contactsContainer">
         <div class="contactsTitleCol">
             <h1><?php echo __('Contatti','branco'); ?></h1>
