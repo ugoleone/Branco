@@ -15,6 +15,16 @@
     <link rel="apple-touch-icon" href="<?php echo(get_template_directory_uri()."/assets/icons/favicon-192.png") ?>">
     <meta name="msapplication-TileImage" content="<?php echo(get_template_directory_uri()."/assets/icons/favicon-192.png") ?>">
 
+    <!-- Social sharing -->
+    <meta name="description" content="Branco, nato 1987 nella città alagoana di Penedo"/> <!-- 150 chars -->
+    <meta property="og:title" content="Branco"/>
+    <meta property="og:description" content="Branco non aveva mai avuto fino a quel momento nessun tipo di esperienza creativa. In questo senso, continua ad essere un talento allo stato grezzo, vive e crea i sui quadri artisticamente isolato da ciò che accade nel mondo dell’arte."/> <!-- 300 chars -->
+    <meta property="og:site_name" content="Branco - Jadielson Dos Santos Lima"/>
+    <meta property="og:locale" content="it_IT"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://brancoart.com"/>
+    <meta property="og:image:secure_url" itemprop="image" content="<?php echo(get_template_directory_uri()."/assets/icons/favicon-192.png") ?>"/>
+    
     <?php wp_head(); ?>
 </head>
 <body>
