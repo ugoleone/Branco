@@ -85,15 +85,15 @@ var gallCont = document.getElementById("galleryContainer")
 var centralGallerycol = document.getElementById("centralGallerycol")
 gallCont.addEventListener("scroll", myFunction);
 
-var minHeight = gallCont.scrollHeight - gallCont.offsetHeight;
-
+//var minHeight = gallCont.scrollHeight - gallCont.offsetHeight;
+var gallContHeight = gallCont.offsetHeight
 function myFunction() {
-  console.log("scroolled " + gallCont.scrollTop +"  Offset -> " + gallCont.offsetHeight +"  HEIGHT -> " + gallCont.scrollHeight)
+  //console.log("scroolled " + gallCont.scrollTop +"  Offset -> " + gallCont.offsetHeight +"  HEIGHT -> " + gallCont.scrollHeight)
   if (gallCont.scrollTop <= gallCont.offsetHeight) {
     centralGallerycol.style.height = "auto"
     centralGallerycol.style.transform = "translate(0px, "+gallCont.scrollTop*2+"px)"
   }
   else {
-    centralGallerycol.style.height = minHeight + "px"
+    centralGallerycol.style.height = gallContHeight + "px"
   }
 }

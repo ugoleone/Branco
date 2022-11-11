@@ -1,14 +1,16 @@
 <div class="galleryContainer" id="galleryContainer">
     <div class="galleryCol">
         <?php
+            $operaIndex = 0;
             if( have_rows('first_col') ):
                 while( have_rows('first_col') ) : the_row();
                 ?>
-                    <div class="galleryItem" onclick="openLightBox(0)">
+                    <div class="galleryItem" onclick="openLightBox(<?php echo($operaIndex) ?>)">
                         <img class="galleryImage" src="<?php the_sub_field('opera');?>" alt="<?php the_sub_field('titolo_opera');?>">
                         <span><?php the_sub_field('titolo_opera');?></span>
                     </div>
                 <?php
+                    $operaIndex++;
                 endwhile;
             endif;
         ?>
@@ -18,11 +20,12 @@
             if( have_rows('second_col') ):
                 while( have_rows('second_col') ) : the_row();
                 ?>
-                    <div class="galleryItem" onclick="openLightBox(0)">
+                    <div class="galleryItem" onclick="openLightBox(<?php echo($operaIndex) ?>)">
                         <img class="galleryImage" src="<?php the_sub_field('opera');?>" alt="<?php the_sub_field('titolo_opera');?>">
                         <span><?php the_sub_field('titolo_opera');?></span>
                     </div>
                 <?php
+                    $operaIndex++;
                 endwhile;
             endif;
         ?>
@@ -32,11 +35,12 @@
             if( have_rows('third_col') ):
                 while( have_rows('third_col') ) : the_row();
                 ?>
-                    <div class="galleryItem" onclick="openLightBox(0)">
+                    <div class="galleryItem" onclick="openLightBox(<?php echo($operaIndex) ?>)">
                         <img class="galleryImage" src="<?php the_sub_field('opera');?>" alt="<?php the_sub_field('titolo_opera');?>">
                         <span><?php the_sub_field('titolo_opera');?></span>
                     </div>
                 <?php
+                    $operaIndex++;
                 endwhile;
             endif;
         ?>
