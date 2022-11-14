@@ -88,13 +88,13 @@ var oldTransformValue = centralGallerycol.style.transform.split(" ")[1]+""
 oldTransformValue = parseInt(oldTransformValue.replace('%)',''))
 //var minHeight = gallCont.scrollHeight - gallCont.offsetHeight;
 var gallContHeight = gallCont.offsetHeight
-var gallScrollHeight = gallCont.scrollHeight/2
+//var gallScrollHeight = gallCont.scrollHeight/2
 function myFunction() {
   //console.log("scroolled " + gallCont.scrollTop +"  Offset -> " + gallCont.offsetHeight +"  HEIGHT -> " + gallCont.scrollHeight)
   if (gallCont.scrollTop <= gallCont.offsetHeight) {
     var scrollPercent = (gallCont.scrollTop*2/gallContHeight)*100
     var quantoTraslo = oldTransformValue + scrollPercent
-    console.log("percent --> "+scrollPercent + "old value ---> "+oldTransformValue)
+    //console.log("percent --> "+scrollPercent + "old value ---> "+oldTransformValue)
     
     centralGallerycol.style.transform = "translate(0%, "+quantoTraslo+"%)"
   }
