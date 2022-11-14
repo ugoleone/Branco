@@ -84,17 +84,21 @@ Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => 
 var gallCont = document.getElementById("galleryContainer")
 var centralGallerycol = document.getElementById("centralGallerycol")
 gallCont.addEventListener("scroll", myFunction);
-
+var oldTransformValue = centralGallerycol.style.transform.split(" ")[1]+""
+oldTransformValue = parseInt(oldTransformValue.replace('%)',''))
 //var minHeight = gallCont.scrollHeight - gallCont.offsetHeight;
-//var gallContHeight = gallCont.offsetHeight
+var gallContHeight = gallCont.offsetHeight
 var gallScrollHeight = gallCont.scrollHeight/2
 function myFunction() {
   //console.log("scroolled " + gallCont.scrollTop +"  Offset -> " + gallCont.offsetHeight +"  HEIGHT -> " + gallCont.scrollHeight)
   if (gallCont.scrollTop <= gallCont.offsetHeight) {
-    centralGallerycol.style.height = "auto"
-    centralGallerycol.style.transform = "translate(0px, "+gallCont.scrollTop*2+"px)"
+    var scrollPercent = (gallCont.scrollTop*2/gallContHeight)*100
+    var quantoTraslo = oldTransformValue + scrollPercent
+    console.log("percent --> "+scrollPercent + "old value ---> "+oldTransformValue)
+    
+    centralGallerycol.style.transform = "translate(0%, "+quantoTraslo+"%)"
   }
   else {
-    centralGallerycol.style.height = gallScrollHeight + "px"
+    //centralGallerycol.style.height = gallScrollHeight + "px"
   }
 }

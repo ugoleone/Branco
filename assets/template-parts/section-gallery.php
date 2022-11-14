@@ -32,7 +32,7 @@ else {
             endif;
         ?>
     </div>
-    <div class="galleryCol" id="centralGallerycol">
+    <div class="galleryCol" id="centralGallerycol" style="transform: translate(0%, -100%);">
         <?php
             if( have_rows('second_col') ):
                 while( have_rows('second_col') ) : the_row();
