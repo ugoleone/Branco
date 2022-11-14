@@ -443,3 +443,34 @@ a.homeButton {
   from {scale: 1.0}
   to {scale: 1.1}
 }
+
+/************************** COOKIE BANNER **************************/
+.cookieBanner {
+  padding: 20px;
+  position: fixed;
+  z-index: 2;
+  bottom: 10vh;
+  left: 50%;
+  transform: translate(-40%, 0);
+  background-color: var(--bg);
+  color: var(--txtcolor);
+}
+
+.cookieBanner a {
+  color: var(--txtcolor);
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 20px;
+  text-underline-offset: 4px;
+}
+
+.cookieBanner a:hover {
+  color: var(--hoverTXTColor);
+}
+
+@media only screen and (max-width: 600px) {
+  .cookieBanner {
+      left: 50%;
+      transform: translate(-50%, 0);
+  }
+}

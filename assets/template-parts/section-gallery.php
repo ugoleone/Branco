@@ -1,3 +1,20 @@
+<?php
+
+if(isset($_COOKIE['lang']) and $_COOKIE['lang'] == 'en') {
+    $lang = 'en';
+    $acrilicoText = 'Acrylic on canvas';
+}
+else if(isset($_COOKIE['lang']) and $_COOKIE['lang'] == 'pt') {
+    $lang = 'pt';
+    $acrilicoText = 'Acrílico sobre tela';
+}
+else {
+    $lang = 'it';
+    $acrilicoText = 'Acrilico su tela';
+}
+
+?>
+
 <div class="galleryContainer" id="galleryContainer">
     <div class="galleryCol">
         <?php
@@ -60,7 +77,7 @@
         </div>
         <div class="lightBoxCol">
             <p id="lightBoxTitle"></p>
-            <p id="lightBoxTitle">Acrilico su tela</p>
+            <p id="lightBoxTitle"><?php echo($acrilicoText) ?></p>
         </div>
     </div>
 </div>

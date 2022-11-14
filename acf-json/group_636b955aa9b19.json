@@ -22,9 +22,85 @@
             "new_lines": ""
         },
         {
+            "key": "field_6372b45f0df1d",
+            "label": "Intro About Text en",
+            "name": "intro_about_text_en",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_6372b4710df1e",
+            "label": "Intro About Text pt",
+            "name": "intro_about_text_pt",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
             "key": "field_636ba67875bc4",
             "label": "First About Text",
             "name": "first_about_text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_6372b47b0df1f",
+            "label": "First About Text en",
+            "name": "first_about_text_en",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_6372b49d0df21",
+            "label": "First About Text pt",
+            "name": "first_about_text_pt",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -84,6 +160,44 @@
             "new_lines": ""
         },
         {
+            "key": "field_6372b4ac0df22",
+            "label": "Second About Text en",
+            "name": "second_about_text_en",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_6372b4b50df23",
+            "label": "Second About Text pt",
+            "name": "second_about_text_pt",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
             "key": "field_636bde307f5f9",
             "label": "Second About Image",
             "name": "second_about_image",
@@ -111,6 +225,44 @@
             "key": "field_636ba6b275bc6",
             "label": "Third About Text",
             "name": "third_about_text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_6372b4c20df24",
+            "label": "Third About Text en",
+            "name": "third_about_text_en",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_6372b4f00df25",
+            "label": "Third About Text pt",
+            "name": "third_about_text_pt",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -168,5 +320,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1668014535
+    "modified": 1668461832
 }

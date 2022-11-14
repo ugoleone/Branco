@@ -5,6 +5,16 @@ Template Name: Contacts
 ?>
 <?php
 get_header();
+
+if(isset($_COOKIE['lang']) and $_COOKIE['lang'] == 'en') {
+    $contactName = 'Contacts';
+}
+else if(isset($_COOKIE['lang']) and $_COOKIE['lang'] == 'pt') {
+    $contactName = 'Contatos';
+}
+else {
+    $contactName = 'Contatti';
+}
 ?>
 
 <script>
@@ -13,7 +23,7 @@ get_header();
 
     <div class="contactsContainer">
         <div class="contactsTitleCol">
-            <h1><?php echo __('Contatti','branco'); ?></h1>
+            <h1><?php echo __($contactName,'branco'); ?></h1>
         </div>
         <div class="contactsBodyCol">
            <h2>Management</h2>
