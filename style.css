@@ -195,6 +195,11 @@ a.homeButton {
   scale: 1.05;
 }
 
+.galleryItem span,
+#lightBoxTitle {
+  font-family: Romie;
+}
+
 /**************** LB ********************/
 .lightBox {
   background-color: var(--bg);
@@ -293,6 +298,9 @@ a.homeButton {
   }
   .lightBoxCol:nth-child(2) {
     flex: 2;
+  }
+  .lightBoxCol:last-child {
+    margin-top: 25px;
   }
   .lightBoxCol p {
     align-self: flex-end;

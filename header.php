@@ -39,7 +39,7 @@
         $mostreName = 'Expositions';
     }
     else if ($lang == "pt") {
-        $aboutName = 'biografia';
+        $aboutName = 'Biografia';
         $contactName = 'Contatos';
         $mostreName = 'Exibições';
     }
