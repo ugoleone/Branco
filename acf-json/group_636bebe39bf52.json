@@ -22,6 +22,44 @@
             "new_lines": ""
         },
         {
+            "key": "field_6373d632e954c",
+            "label": "First About Text en",
+            "name": "first_about_text_en",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_6373d63ee954d",
+            "label": "First About Text pt",
+            "name": "first_about_text_pt",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
             "key": "field_636bebe3a139e",
             "label": "First About Image",
             "name": "first_about_image",
@@ -87,5 +125,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1668017232
+    "modified": 1668535884
 }

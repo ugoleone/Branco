@@ -5,6 +5,17 @@ Template Name: Expos
 ?>
 <?php
 get_header();
+
+if(isset($_COOKIE['lang']) and $_COOKIE['lang'] == 'en') {
+    $lang = 'en';
+}
+else if(isset($_COOKIE['lang']) and $_COOKIE['lang'] == 'pt') {
+    $lang = 'pt';
+}
+else {
+    $lang = 'it';
+}
+
 ?>
 
 <script>
@@ -16,7 +27,7 @@ get_header();
             <img src="<?php the_field('first_about_image'); ?>" alt="" srcset="">
         </div>
         <div class="aboutBodyCol">
-            <p><?php the_field('first_about_text'); ?></p>
+            <p><?php if($lang == 'en') {the_field('first_about_text_en');} else if($lang == 'pt') {the_field('first_about_text_pt');} else {the_field('first_about_text');} ?></p>
         </div>
     </div>
 
