@@ -16,51 +16,60 @@ else {
 ?>
 
 <div class="galleryContainer" id="galleryContainer">
-    <div class="galleryCol">
-        <?php
-            $operaIndex = 0;
-            if( have_rows('first_col') ):
-                while( have_rows('first_col') ) : the_row();
-                ?>
-                    <div class="galleryItem" onclick="openLightBox(<?php echo($operaIndex) ?>)">
-                        <img class="galleryImage" src="<?php the_sub_field('opera');?>" alt="<?php the_sub_field('titolo_opera');?>">
-                        <span><?php the_sub_field('titolo_opera');?></span>
-                    </div>
-                <?php
-                    $operaIndex++;
-                endwhile;
-            endif;
-        ?>
+    <div class="galleryColContainer" id="firstGallerycol">
+        <div class="galleryCol">
+            <?php
+                $operaIndex = 0;
+                if( have_rows('first_col') ):
+                    while( have_rows('first_col') ) : the_row();
+                    ?>
+                        <div class="galleryItem" onclick="openLightBox(<?php echo($operaIndex) ?>)">
+                            <img class="galleryImage" src="<?php the_sub_field('opera');?>" alt="<?php the_sub_field('titolo_opera');?>">
+                            <span><?php the_sub_field('titolo_opera');?></span>
+                        </div>
+                    <?php
+                        $operaIndex++;
+                    endwhile;
+                endif;
+            ?>
+            <div class="GallerySpacer" id="firstGallerySpacer"></div>
+        </div>
     </div>
-    <div class="galleryCol" id="centralGallerycol" style="transform: translate(0%, -100%);">
-        <?php
-            if( have_rows('second_col') ):
-                while( have_rows('second_col') ) : the_row();
-                ?>
-                    <div class="galleryItem" onclick="openLightBox(<?php echo($operaIndex) ?>)">
-                        <img class="galleryImage" src="<?php the_sub_field('opera');?>" alt="<?php the_sub_field('titolo_opera');?>">
-                        <span><?php the_sub_field('titolo_opera');?></span>
-                    </div>
-                <?php
-                    $operaIndex++;
-                endwhile;
-            endif;
-        ?>
+    <div class="galleryColContainer" id="centralGallerycol">
+        <div class="galleryCol">
+            <?php
+                if( have_rows('second_col') ):
+                    while( have_rows('second_col') ) : the_row();
+                    ?>
+                        <div class="galleryItem" onclick="openLightBox(<?php echo($operaIndex) ?>)">
+                            <img class="galleryImage" src="<?php the_sub_field('opera');?>" alt="<?php the_sub_field('titolo_opera');?>">
+                            <span><?php the_sub_field('titolo_opera');?></span>
+                        </div>
+                    <?php
+                        $operaIndex++;
+                    endwhile;
+                endif;
+            ?>
+            <div class="GallerySpacer" id="secondGallerySpacer"></div>
+        </div>
     </div>
-    <div class="galleryCol">
-        <?php
-            if( have_rows('third_col') ):
-                while( have_rows('third_col') ) : the_row();
-                ?>
-                    <div class="galleryItem" onclick="openLightBox(<?php echo($operaIndex) ?>)">
-                        <img class="galleryImage" src="<?php the_sub_field('opera');?>" alt="<?php the_sub_field('titolo_opera');?>">
-                        <span><?php the_sub_field('titolo_opera');?></span>
-                    </div>
-                <?php
-                    $operaIndex++;
-                endwhile;
-            endif;
-        ?>
+    <div class="galleryColContainer" id="thirdGallerycol">
+        <div class="galleryCol">
+            <?php
+                if( have_rows('third_col') ):
+                    while( have_rows('third_col') ) : the_row();
+                    ?>
+                        <div class="galleryItem" onclick="openLightBox(<?php echo($operaIndex) ?>)">
+                            <img class="galleryImage" src="<?php the_sub_field('opera');?>" alt="<?php the_sub_field('titolo_opera');?>">
+                            <span><?php the_sub_field('titolo_opera');?></span>
+                        </div>
+                    <?php
+                        $operaIndex++;
+                    endwhile;
+                endif;
+            ?>
+            <div class="GallerySpacer" id="thirdGallerySpacer"></div>
+        </div>
     </div>
 </div>
 

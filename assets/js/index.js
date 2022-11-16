@@ -1,4 +1,3 @@
-
 function openMenu() {
     var menu = document.getElementById("mobileMenu");
     var openMenuB = document.getElementById("openMenuB");
@@ -8,6 +7,7 @@ function openMenu() {
     openMenuB.style.display = "none"
     closeMenuB.style.display = "block"
 }
+
 function closeMenu() {
     var menu = document.getElementById("mobileMenu");
     var openMenuB = document.getElementById("openMenuB");
@@ -52,53 +52,95 @@ function closeLightBox(image) {
 
 function slideNext() {
     var images = document.getElementsByClassName('galleryItem')
-    if (currentSlide+1 < images.length)
-        openLightBox(currentSlide+1)
+    if (currentSlide + 1 < images.length)
+        openLightBox(currentSlide + 1)
     else
         openLightBox(0)
 }
 
 function slidePrevious() {
     var images = document.getElementsByClassName('galleryItem')
-    if (currentSlide-1 >= 0)
-        openLightBox(currentSlide-1)
+    if (currentSlide - 1 >= 0)
+        openLightBox(currentSlide - 1)
     else
-        openLightBox(images.length-1)
+        openLightBox(images.length - 1)
 }
 
 function galleryRandomizer() {
     var images = document.getElementsByClassName('galleryItem')
-    for (var i=0; i<images.length; i++) {
-        images[i].style.marginLeft = (Math.floor(Math.random() * 10)+5) + "%"
-        images[i].style.marginTop= Math.floor(Math.random() * 20) + "px"
+    for (var i = 0; i < images.length; i++) {
+        images[i].style.marginLeft = (Math.floor(Math.random() * 10) + 5) + "%"
+        images[i].style.marginTop = Math.floor(Math.random() * 20) + "px"
     }
 }
 
 window.onload = galleryRandomizer()
 
-Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
+Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => {
+    img.onload = img.onerror = resolve;
+}))).then(() => {
     document.getElementById('loadingS').style.display = "none"
+    scrollingColumnsSetup()
 });
 
+function scrollingColumnsSetup() {
+    scrollColumsEqualizer()
+    maxCentralscroll = secondGalleryCont.scrollHeight
+    secondGalleryCont.scroll(0, maxCentralscroll)
+    maxCentralscroll = secondGalleryCont.scrollTop
+}
 
-var gallCont = document.getElementById("galleryContainer")
-var centralGallerycol = document.getElementById("centralGallerycol")
-gallCont.addEventListener("scroll", myFunction);
-var oldTransformValue = centralGallerycol.style.transform.split(" ")[1]+""
-oldTransformValue = parseInt(oldTransformValue.replace('%)',''))
-//var minHeight = gallCont.scrollHeight - gallCont.offsetHeight;
-var gallContHeight = gallCont.offsetHeight
-//var gallScrollHeight = gallCont.scrollHeight/2
-function myFunction() {
-  //console.log("scroolled " + gallCont.scrollTop +"  Offset -> " + gallCont.offsetHeight +"  HEIGHT -> " + gallCont.scrollHeight)
-  if (gallCont.scrollTop <= gallCont.offsetHeight) {
-    var scrollPercent = (gallCont.scrollTop*2/gallContHeight)*100
-    var quantoTraslo = oldTransformValue + scrollPercent
-    //console.log("percent --> "+scrollPercent + "old value ---> "+oldTransformValue)
-    
-    centralGallerycol.style.transform = "translate(0%, "+quantoTraslo+"%)"
-  }
-  else {
-    //centralGallerycol.style.height = gallScrollHeight + "px"
-  }
+addEventListener("resize", scrollingColumnsSetup);
+
+
+firstGalleryCont = document.getElementById("firstGallerycol")
+secondGalleryCont = document.getElementById("centralGallerycol")
+thirdGalleryCont = document.getElementById("thirdGallerycol")
+firstGalleryCont.addEventListener("scroll", scrollFunction);
+thirdGalleryCont.addEventListener("scroll", scrollFunction);
+secondGalleryCont.addEventListener("scroll", centralScrollFunction);
+
+function getMaxScrollHeight(h1, h2, h3) {
+    if (h1 >= h2 && h1 >= h3)
+        return h1
+    else if (h2 >= h1 && h2 >= h3)
+        return h2
+    else
+        return h3
+}
+
+function scrollColumsEqualizer() {
+    var firstScrollHeight = firstGalleryCont.scrollHeight
+    var secondScrollHeight = secondGalleryCont.scrollHeight
+    var thirdScrollHeight = thirdGalleryCont.scrollHeight
+
+    var maxScrollHeight = getMaxScrollHeight(firstScrollHeight, secondScrollHeight, thirdScrollHeight)
+
+    console.log("firstScrollHeight" + firstScrollHeight)
+    console.log("secondScrollHeight" + secondScrollHeight)
+    console.log("thirdScrollHeight" + thirdScrollHeight)
+    console.log("maxScrollHeight" + maxScrollHeight)
+
+
+    if (firstScrollHeight <= maxScrollHeight)
+        document.getElementById('firstGallerySpacer').style.height = (maxScrollHeight - firstScrollHeight) + "px"
+
+    if (secondScrollHeight <= maxScrollHeight)
+        document.getElementById('secondGallerySpacer').style.height = (maxScrollHeight - secondScrollHeight) + "px"
+
+    if (thirdScrollHeight <= maxScrollHeight)
+        document.getElementById('thirdGallerySpacer').style.height = (maxScrollHeight - thirdScrollHeight) + "px"
+}
+
+function scrollFunction(evt) {
+    var scrollAmount = evt.currentTarget.scrollTop
+    firstGalleryCont.scroll(0, scrollAmount)
+    thirdGalleryCont.scroll(0, scrollAmount)
+    secondGalleryCont.scroll(0, maxCentralscroll - scrollAmount)
+}
+
+function centralScrollFunction(evt) {
+    var scrollAmount = maxCentralscroll - evt.currentTarget.scrollTop
+    firstGalleryCont.scroll(0, scrollAmount)
+    thirdGalleryCont.scroll(0, scrollAmount)
 }

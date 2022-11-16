@@ -137,40 +137,36 @@ a.homeButton {
 
 
 /**************** GC ********************/
+
 .galleryContainer {
   width: 100%;
   height: 100vh;  
   position: relative;
-  overflow-y: scroll;
+  overflow-y: hidden;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.galleryContainer::-webkit-scrollbar {
+
+
+.galleryColContainer {
+  flex: 1;
+  overflow-y: scroll;
+}
+.galleryColContainer::-webkit-scrollbar {
   display: none;
 }
 /* Hide scrollbar for IE, Edge and Firefox */
-.example {
+.galleryColContainer {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
 
-.galleryCol {
-    flex: 1;
+.GallerySpacer {
+  width: 100%;
 }
 
-#centralGallerycol {
-  /*transform: translate(0px, calc(-100% - 20px));*/
-  /*margin-top: -40%;*/
-  /*overflow-y: hidden;*/
-  transition: 0.1s;
-}
-
-.galleryCol img {
-    /*width: 80%;
-    margin-left: 0%;
-    margin-top: 0px;
-    margin-bottom: 50px;*/
+.galleryImage {
     width: 100%;
     margin-bottom: 10px;
 }
@@ -199,6 +195,7 @@ a.homeButton {
 #lightBoxTitle {
   font-family: Romie;
 }
+
 
 /**************** LB ********************/
 .lightBox {
