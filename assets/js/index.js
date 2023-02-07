@@ -123,7 +123,7 @@ function scrollColumsEqualizer() {
 
 
     if (firstScrollHeight <= maxScrollHeight)
-        document.getElementById('firstGallerySpacer').style.height = (maxScrollHeight - firstScrollHeight) + 50 + "px"
+        document.getElementById('firstGallerySpacer').style.height = (maxScrollHeight - firstScrollHeight)  + "px"
 
     if (secondScrollHeight <= maxScrollHeight)
         document.getElementById('secondGallerySpacer').style.height = (maxScrollHeight - secondScrollHeight) + "px"
