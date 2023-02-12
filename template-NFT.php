@@ -1,4 +1,10 @@
 <?php
+/*
+Template Name: NFT
+*/
+?>
+
+<?php
 get_header();
 ?>
 
