@@ -85,6 +85,7 @@
             <a href="/" id="home">Home</a>
             <a href="/contacts" id="contacts"><?php echo __($contactName,'branco'); ?></a>
             <a href="/about" id="about"><?php echo __($aboutName,'branco'); ?></a>
+            <a href="/nft" id="nft">NFTs</a>
             <a href="/expos" id="expos"><?php echo __($mostreName,'branco'); ?></a>
             <a href="?lang=it" id="expos" style="padding-right: 0px;">IT&#9;/</a>
             <a href="?lang=en" id="expos" style="padding-right: 0px;padding-left: 6px;">EN&#9;/</a>
@@ -101,6 +102,7 @@
         <a href="/" class="active">Home</a>
         <a href="/contacts"><?php echo __($contactName,'branco'); ?></a>
         <a href="/about"><?php echo __($aboutName,'branco'); ?></a>
+        <a href="/nft" id="nft">NFTs</a>
         <a href="/expos"><?php echo __($mostreName,'branco'); ?></a>
         <a href="?lang=it" style="margin-top: 10px">IT</a>
         <a href="?lang=en" style="padding-top: 0px">EN</a>

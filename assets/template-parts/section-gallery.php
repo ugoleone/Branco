@@ -33,7 +33,7 @@ else {
                 endif;
             ?>
             <div class="GallerySpacer" id="firstGallerySpacer"></div>
-            <div class="GallerySpacer" id="extraPadding" style="height:30vw;"></div>
+            <div class="GallerySpacer" id="extraPadding" style="height:15vw;"></div>
         </div>
     </div>
     <div class="galleryColContainer" id="centralGallerycol">
@@ -86,8 +86,8 @@ else {
             <span class="imageArrows" onclick="slideNext()">&#62;</span>
         </div>
         <div class="lightBoxCol">
-            <p id="lightBoxTitle"></p>
-            <p id="lightBoxTitle"><?php echo($acrilicoText) ?></p>
+            <p></p>
+            <p id="lightBoxTitle" class="lightBoxTitle"><?php echo($acrilicoText) ?></p>
         </div>
     </div>
 </div>
