@@ -33,7 +33,7 @@ else {
                 endif;
             ?>
             <div class="GallerySpacer" id="firstGallerySpacer"></div>
-            <div class="GallerySpacer" id="extraPadding" style="height:15vw;"></div>
+            <!--<div class="GallerySpacer" id="extraPadding" style="height:15vw;"></div>-->
         </div>
     </div>
     <div class="galleryColContainer" id="centralGallerycol">
